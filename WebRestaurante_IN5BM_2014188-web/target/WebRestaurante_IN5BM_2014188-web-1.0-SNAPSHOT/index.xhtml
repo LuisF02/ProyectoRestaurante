@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Welcome</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body> 
+        <center>  <FONT FACE="impact" SIZE="6" COLOR="black">
+                RESTAURANTE LA MEDIA CANCHA</FONT></center>
+                
+        
+        <body bgcolor="white"></body>
+        
+        <br />
+        <br />
+       
+        <h:form>
+        <p:tabMenu activeIndex="#{param.i}">
+            <p:menuitem outcome="welcomePrimefaces" value="Bienvenido." icon="pi pi-star">
+                <f:param name="i" value="0" />
+            </p:menuitem>
+            <p:menuitem value="Areas" outcome="/areas/List" icon="pi pi-star">
+                <f:param name="i" value="0" />
+            </p:menuitem>
+            <p:menuitem outcome="/camarero/List" value="Camarero" icon="pi pi-search">
+                <f:param name="i" value="1" />
+            </p:menuitem>
+            <p:menuitem outcome="/cliente/List" value="Clientes" icon="pi pi-file">
+                <f:param name="i" value="2" />
+            </p:menuitem>
+            <p:menuitem outcome="/cocinero/List" value="Cocinero" icon="pi pi-briefcase">
+                <f:param name="i" value="3" />
+            </p:menuitem>
+            <p:menuitem outcome="/detallefactura/List" value="Detallefactura" icon="pi pi-user">
+                <f:param name="i" value="4" />
+            </p:menuitem>         
+            <p:menuitem outcome="/factura/List" value="Factura" icon="pi pi-user">
+                <f:param name="i" value="5" />
+            </p:menuitem>
+            <p:menuitem outcome="/mesa/List" value="Mesa" icon="pi pi-user">
+                <f:param name="i" value="6" />
+            </p:menuitem>
+            <p:menuitem outcome="/plato/List" value="Plato" icon="pi pi-user" >
+                <f:param name="i" value="7" />
+            </p:menuitem>
+         
+        </p:tabMenu>
+        </h:form>
+        
+        
+        
+            <center> <img src="./imagenesluis/lamediacanchafondo.jpg" width="500" height="500"/></center>
+            
+        
+            
+        
+        
+       
+        
+    </h:body>
+   
+
+
+</html>
+
